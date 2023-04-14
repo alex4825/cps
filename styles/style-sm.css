@@ -1,0 +1,35 @@
+.nav__left .nav__item--separator:nth-child(4),
+.nav-header{
+    display:none;
+}
+h1::before{
+    margin-left: -24px;
+    margin-right: 20px;
+}
+h1{
+    margin-left: 24px;
+}
+.menu{
+    margin-left: 24px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 25px;
+}
+.preview{
+    width: 50%; 
+    border-radius: 6px;   
+}
+.section{
+    width: 45%; 
+    padding-left: 0;
+}
+.section p:nth-child(3)
+{
+    display:none;
+}

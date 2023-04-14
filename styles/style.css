@@ -1,0 +1,113 @@
+.nav{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__left{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.nav__right{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.nav__item{
+    vertical-align: center;
+    height: 40px;
+    width: auto;
+    margin-right: 16px;
+}
+.nav__item:last-child{
+    margin-right: 0;
+}
+.nav__item--logo{
+    height: 50px;
+}
+.nav__item--separator{
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #EAEAEA;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: #D9FFF5;
+    border: none;
+}
+
+h1::before{
+    content: "";
+    color: transparent;
+    border-right: 4px solid #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: -14px;
+    margin-right: 14px;
+}
+h1{
+    display: inline-block;
+    font-size: 28px;
+    margin: 24px 12px;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    margin-left: 16px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.menu::-webkit-scrollbar{
+    display: none;
+}
+.menu__item{
+    white-space: nowrap;
+    padding: 8px 16px;
+    background-color: inherit;
+
+    color:#7E7E82;
+    font-size: 16px;
+    line-height: 150%;
+}
+.menu__item:last-child{
+    margin-left: 0;
+}
+.menu__item:focus{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.menu__hide{
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: fixed;
+    right: 0;
+}
+
+.main{
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.section__item, .section p{
+    margin-bottom: 16px;
+}
+.section__item--more > summary{
+    font-weight: 500;
+    margin-left: 16px;
+    padding-left: 16px;
+    list-style-position: outside;
+    list-style-image: url("/images/icon.svg");    
+}
+.preview{
+    width: 100%;
+    height: auto;   
+}

@@ -1,0 +1,9 @@
+.nav__left .nav__item--separator,
+.nav__item--call,
+.nav__item--chat,
+.nav__item--profile,
+.section p:not(:first-child),
+.nav-header
+{
+    display:none;
+}

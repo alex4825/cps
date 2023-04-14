@@ -1,0 +1,54 @@
+.nav,
+.line,
+.section p:nth-child(2),
+.menu__hide
+{
+    display:none;
+}
+.section p:nth-child(3)
+{
+    display:block;
+}
+h1::before{
+    margin-left: -32px;
+    margin-right: 28px;
+}
+h1::before{
+    margin-left: -32px;
+    margin-right: 28px;
+}
+h1{
+    margin-left: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu, .main{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.menu{
+    overflow-x: visible;
+    flex-wrap: wrap;
+}
+.nav-header{
+    display: inline-block;
+}
+.h1-md{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 8px;
+}
+.h1-md__item{
+    display: inline-flex;
+    font-weight: 500;
+    align-items: center;
+}
+.h1-md__item > img{
+    margin-left: 8px;
+}
+.h1-md__item{
+    margin-right: 32px;
+}
