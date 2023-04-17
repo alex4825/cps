@@ -81,7 +81,8 @@ h1{
     margin-left: 0;
 }
 .menu__item:focus{
-    border: 2px solid #B8FFEC;
+    outline: 2px solid #B8FFEC;
+    outline-offset: 0;
     border-radius: 6px;
 }
 .menu__hide{
