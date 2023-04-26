@@ -1,18 +1,8 @@
-.nav,
-.line,
-.section p:nth-child(2),
-.menu__hide
+.nav
 {
     display:none;
 }
-.section p:nth-child(3)
-{
-    display:block;
-}
-h1::before{
-    margin-left: -32px;
-    margin-right: 28px;
-}
+
 h1::before{
     margin-left: -32px;
     margin-right: 28px;
@@ -51,4 +41,7 @@ h1{
 }
 .h1-md__item{
     margin-right: 32px;
+}
+.desc p {
+    height: auto;
 }

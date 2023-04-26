@@ -1,4 +1,4 @@
-.nav__left .nav__item--separator:nth-child(4),
+
 .nav-header{
     display:none;
 }
@@ -24,12 +24,10 @@ h1{
 .preview{
     width: 50%; 
     border-radius: 6px;   
+    right: 0;
+    left: auto;
 }
-.section{
+.desc{
     width: 45%; 
     padding-left: 0;
-}
-.section p:nth-child(3)
-{
-    display:none;
 }

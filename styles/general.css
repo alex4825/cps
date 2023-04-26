@@ -15,3 +15,6 @@ ul, ol, li, p, body {
 button{
     border: none;
 }
+button:hover, label:hover{
+    cursor: pointer;
+}
