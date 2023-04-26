@@ -113,7 +113,7 @@ h1{
     vertical-align: middle;
     padding-left: 1.5em;
     margin-left: 8px;
-    background: url(./images/icon.svg) no-repeat left center;
+    background: url(/images/icon.svg) no-repeat left center;
     display: inline-block;
     margin-bottom: 16px;
 }
