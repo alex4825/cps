@@ -5,61 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="styles/import-fonts.css">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/style.css">
-
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/style-xs.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/style-sm.css">
-    <link rel="stylesheet" media="screen and (min-width: 1120px)" href="styles/style-md.css">
-    
+    <link rel="stylesheet" href="styles/style.css">    
     <title>CPS</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <span class="nav__left">
-                <button class="nav__item nav__item--burger"><img src="images/burger.svg" alt="Catalog"></button>
-                
+                <button class="nav__item nav__item--catalog"><img src="images/burger.svg" alt="Call"></button>
                 <button class="nav__item nav__item--logo"><img src="images/logo.svg" alt="Logo"></button>
             </span>
-            <span class="nav__right">
-                <button class="nav__item nav__item--call"><img src="images/call.svg" alt="Call"></button>
-                <button class="nav__item nav__item--chat"><img src="images/chat.svg" alt="Chat"></button>
-                <button class="nav__item nav__item--profile"><img src="images/profile.svg" alt="Profile"></button>
-                
-                <button class="nav__item nav__item--repair"><img src="images/repair.svg" alt="Settings"></button>
-                <button class="nav__item"><img src="images/checkstatus.svg" alt="Check status"></button>
+            <span class="nav__right">                
+                <button class="nav__item nav__item--search"><img src="images/search.svg" alt="Check status"></button>
             </span>
         </nav>
 
-        <div class="h1-md">
-            <h1>Услуги и сервисы</h1>
-            <nav class="nav-header">
-                <button class="h1-md__item">Оставить заявку <img src="images/repair.svg" alt="Settings"></button>
-                <button class="h1-md__item">Статус ремонта <img src="images/checkstatus.svg" alt="Check status"></button>
-            </nav>
-        </div>
         <nav class="menu">
-            <button class="menu__item" autofocus>Ремонтируемые устройства</button>
-            <button class="menu__item">Дополнительные услуги</button>
-            <button class="menu__item">Ремонтируемые бренды</button>
-            <button class="menu__item">Цены на услуги</button>
-            <button class="menu__item">Адреса сервисных центров</button>
-            <button class="menu__item">Специальные цены</button>
-            <button class="menu__item">Отзывы</button>  
-           
+            <li><a href="#" autofocus>Ремонт техники</a></li>
+            <li><a href="#">Услуги и сервисы<a></li>
+            <li><a href="#">Корпоративным клиентам<a></li>
+            <li><a href="#">Продавцам техники<a></li>
+            <li><a href="#">Партнерам<a></li>
+            <li><a href="#">Производителям<a></li>
+            <li><a href="#">Наши сервисные центры<a></li>  
+            <li><a href="#">Контакты<a></li>             
         </nav>   
     </header>
     <main class="main">
-        <div class="desc">      
-            <input type="button" id="desc__btn" value="Open" hidden>    
-            <p>
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>         
-            <label class="desc__btn--label" for="desc__btn" tabindex="0">Читать далее</label>                
-        </div>   
-        <img class="preview" src="images/preview.png" alt="Preview">
+        
     </main>
+    <footer class="footer">
+        <button class="footer__social"><img src="images/call.svg" alt="Call"></button>
+        <button class="footer__social"><img src="images/chat.svg" alt="Chat"></button>
+        <button class="footer__social"><img src="images/profile.svg" alt="Profile"></button>
+
+        <div class="footer__email">mail@cps.com</div>
+        <div class="footer__number">8 800 890 8900</div>
+
+        <button class="footer__lang footer__lang--selected">RU</button>
+        <button class="footer__lang">EN</button>
+        <button class="footer__lang">CH</button>
+    </footer>
 </body>
 </html>
