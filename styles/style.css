@@ -34,13 +34,16 @@
     margin-bottom: 0px;
 }
 
-.menu a:focus{
+.menu a:focus, .menu a:hover{
     color: #7E7E82;
     outline: none;
+    transition:color .5s;
+}
+.menu a::before{
+    background-color: transparent;    
 }
 .menu a:focus::before{   
     content: "";
-    vertical-align: sub;
     position: absolute;    
     left: 0;
     display: inline-block;
@@ -50,7 +53,6 @@
     border-bottom-right-radius: 4px;
     background-color: #41F6D7;
 }
-
 .main{
     display: block;
     height: 268px;
@@ -79,4 +81,9 @@
 }
 .footer__lang--selected{
     color: #7E7E82;
+}
+
+.nav__item:hover, .footer__social:hover{
+    filter: brightness(1.3) contrast(1.4);
+    transition: filter .3s;
 }
