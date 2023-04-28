@@ -17,35 +17,38 @@
     <header class="header">
         <nav class="nav">
             <span class="nav__left">
-                <button class="nav__item nav__item--burger"><img src="images/burger.svg" alt="Catalog"></button>
+                <button class="nav__item nav__item--catalog"></button>
                 
                 <button class="nav__item nav__item--logo"><img src="images/logo.svg" alt="Logo"></button>
             </span>
             <span class="nav__right">
-                <button class="nav__item nav__item--call"><img src="images/call.svg" alt="Call"></button>
-                <button class="nav__item nav__item--chat"><img src="images/chat.svg" alt="Chat"></button>
-                <button class="nav__item nav__item--profile"><img src="images/profile.svg" alt="Profile"></button>
+                <button class="nav__item nav__item--call"></button>
+                <button class="nav__item nav__item--chat"></button>
+                <button class="nav__item nav__item--profile"></button>
                 
-                <button class="nav__item nav__item--repair"><img src="images/repair.svg" alt="Settings"></button>
-                <button class="nav__item"><img src="images/checkstatus.svg" alt="Check status"></button>
+                <button class="nav__item nav__item--repair"></button>
+                <button class="nav__item nav__item--checkstatus"></button>
             </span>
         </nav>
 
+        
         <div class="h1-md">
             <h1>Услуги и сервисы</h1>
             <nav class="nav-header">
-                <button class="h1-md__item">Оставить заявку <img src="images/repair.svg" alt="Settings"></button>
-                <button class="h1-md__item">Статус ремонта <img src="images/checkstatus.svg" alt="Check status"></button>
+                Оставить заявку <button class="h1-md__item h1-md__item--repair"></button>
+                Статус ремонта <button class="h1-md__item h1-md__item--checkstatus"></button>
             </nav>
         </div>
-        <nav class="menu">
-            <button class="menu__item" autofocus>Ремонтируемые устройства</button>
-            <button class="menu__item">Дополнительные услуги</button>
-            <button class="menu__item">Ремонтируемые бренды</button>
-            <button class="menu__item">Цены на услуги</button>
-            <button class="menu__item">Адреса сервисных центров</button>
-            <button class="menu__item">Специальные цены</button>
-            <button class="menu__item">Отзывы</button>  
+        <nav>
+            <ul class="menu">
+                <li><button class="menu__item" autofocus>Ремонтируемые устройства</button></li>
+                <li><button class="menu__item">Дополнительные услуги</button></li>
+                <li><button class="menu__item">Ремонтируемые бренды</button></li>
+                <li><button class="menu__item">Цены на услуги</button></li>
+                <li><button class="menu__item">Адреса сервисных центров</button></li>
+                <li><button class="menu__item">Специальные цены</button></li>
+                <li><button class="menu__item">Отзывы</button>  </li>
+            </ul>
            
         </nav>   
     </header>
@@ -59,7 +62,7 @@
             </p>         
             <label class="desc__btn--label" for="desc__btn" tabindex="0">Читать далее</label>                
         </div>   
-        <img class="preview" src="images/preview.png" alt="Preview">
+        <img class="preview" src="images/preview.jpg" alt="Preview">
     </main>
 </body>
 </html>
