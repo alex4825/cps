@@ -1,33 +1,44 @@
-
-.nav-header{
-    display:none;
-}
-h1::before{
-    margin-left: -24px;
-    margin-right: 20px;
+body{
+    padding-left: 24px;
 }
 h1{
-    margin-left: 24px;
+    margin-bottom: 40px;
 }
-.menu{
-    margin-left: 24px;
+.cards{
+    flex-wrap: wrap;
+    transition: all 1s;
+}
+.cards::after{
+    display: none;
+}
+.cards--hidden{
+    max-height: 176px;
 }
 
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 32px;
-    margin-left: 24px;
-    margin-right: 25px;
+.card{
+    margin-right: 24px;
 }
-.preview{
-    width: 50%; 
-    border-radius: 6px;   
-    right: 0;
-    left: auto;
+
+.show-more{
+    display: block;
+    font-weight: 500;
+    margin-top: 8px;
 }
-.desc{
-    width: 45%; 
-    padding-left: 0;
+.show-more::before{
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background: url(../images/icon.svg) center no-repeat;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.show-more:focus, .show-more:hover, .show-more:active
+{
+    outline-color: aqua;
+}
+
+.show-more--hide::before{
+    transform: rotate(180deg);
 }

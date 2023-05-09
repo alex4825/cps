@@ -1,59 +1,6 @@
-.nav
-{
-    display:none;
+body{
+    padding-left: 32px;
 }
-.nav__item--repair{
-    display: inline-block;
-    position: absolute;
-}
-h1::before{
-    margin-left: -32px;
-    margin-right: 28px;
-}
-h1{
-    margin-left: 32px;
-}
-.menu, .main{
-    margin-left: 32px;
+.card{
     margin-right: 32px;
-}
-.menu{
-    overflow-x: visible;
-    flex-wrap: wrap;
-}
-.nav-header{
-    display: inline-flex;
-    align-items: center;
-    font-weight: 500;
-}
-
-.h1-md{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 42px;
-    margin-bottom: 8px;
-    margin-right: 32px;
-}
-.h1-md__item{
-    display: inline-block;
-    vertical-align: center;
-    height: 40px;
-    width: 40px;
-    background-color: #FF3E79;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius:50%;
-    margin-left: 8px;
-}
-.h1-md__item--repair{
-    background-image: url(../images/repair.svg);
-    margin-right: 32px;
-}
-.h1-md__item--checkstatus{
-    background-image: url(../images/checkstatus.svg);
-}
-
-.desc p {
-    height: auto;
 }

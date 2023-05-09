@@ -1,160 +1,63 @@
-.nav{
-    width: 100%;
-    height: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #D9FFF5 solid 1px;
-}
-.nav__left{
-    display: flex;
-    align-items: center;
-    margin-left: 16px;
-}
-.nav__right{
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-}
-.nav__item{
-    display: inline-block;
-    vertical-align: center;
-    height: 40px;
-    width: 40px;
-    background-color: #FF3E79;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius:50%;
-    margin-right: 16px;
-}
-.nav__item:last-child{
-    margin-right: 0;
-}
-.nav__item--catalog{
-    background-image: url(../images/burger.svg);
-}
-.nav__item--logo{
-    height: 50px;
-    width: auto;
-    background-color: transparent;
-}
-.nav__item--call{
-    background-image: url(../images/call.svg);
-}
-.nav__item--chat{
-    background-image: url(../images/chat.svg);
-}
-.nav__item--profile{
-    background-image: url(../images/profile.svg);
-}
-.nav__item--repair{
-    background-image: url(../images/repair.svg);
-    margin-left: 16px;
-}
-.nav__item--checkstatus{
-    background-image: url(../images/checkstatus.svg);
-}
-.nav__item--repair::before, .nav__item--logo::before{
-    content: "";    
-    display: inline-block;
-    margin-right: 16px;
-    margin-bottom: 10%;
-    
-    width: 2px;
-    height: 32px;
-    border-radius: 1px;
-    background-color: #EAEAEA;
-}
-.nav__item--repair::before{
-    position: relative;
-    right: 28px;
-}
-
-h1::before{
-    content: "";
-    color: transparent;
-    border-right: 4px solid #41F6D7;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    margin-left: -14px;
-    margin-right: 14px;
-}
 h1{
-    display: inline-block;
-    font-size: 28px;
-    margin: 24px 12px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;   
+    margin-bottom: 32px; 
 }
-
-.menu{
-    width: 100%;
+.cards{
     display: flex;
-    margin-left: 16px;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    flex-wrap: nowrap;
+    overflow: hidden;   
 }
-.menu li{
-    display: inline-block;
-}
-.menu::after{
+.cards::after{
     content: "";
     display: inline-block;
     width: 24px;
-    height: 40px;
+    height: 81px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     position: absolute;
     right: 0;
 }
-.menu::-webkit-scrollbar{
+
+.card{
+    display: flex;
+    min-width: 240px; 
+    height: 72px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.card__arrow{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 20px;
+    background: url(../images/arrow.svg) center no-repeat;
+}
+.card:focus, .card:hover, .card:active
+{
+    outline-color: aqua;
+}
+.show-more{
     display: none;
 }
-.menu__item{
-    white-space: nowrap;
-    padding: 8px 16px;
-    background-color: inherit;
-
-    color:#7E7E82;
-    font-size: 16px;
-    line-height: 150%;
-}
-.menu__item:last-child{
-    margin-left: 0;
-}
-.menu__item:focus{
-    border: 2px solid #B8FFEC;
-    outline: none;
-    border-radius: 6px;
-}
-
-.main{
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-.desc p{
-    white-space: pre-line;
-    overflow: hidden;
-    margin-bottom: 16px;
-    /*Показываем только 5 строк, чтоб всё было по макету*/
-    height: calc(5em*1.43); 
-}
-.desc__btn--label{
-    font-weight: 500;
-    font-size: 16px;
-    vertical-align: middle;
-    padding-left: 1.5em;
-    margin-left: 8px;
-    background: url(../images/icon.svg) no-repeat left center;
-    display: inline-block;
-    margin-bottom: 16px;
-}
-#desc__btn:active + p {
-    overflow: auto;
-    height:auto;
-}
-.preview{
+.swiper {
     width: 100%;
-    height: auto;   
-    position: absolute;
-    left: 0; 
+    height: 300px;
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-color: #B5B6BC;
+    --swiper-pagination-bullet-inactive-color: #ddd;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 6px;    
+}
+.swiper-slide{
+    border: 2px solid red;
 }

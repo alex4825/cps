@@ -10,59 +10,33 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/style-xs.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/style-sm.css">
     <link rel="stylesheet" media="screen and (min-width: 1120px)" href="styles/style-md.css">
-    
-    <title>CPS</title>
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <span class="nav__left">
-                <button class="nav__item nav__item--catalog"></button>
-                
-                <button class="nav__item nav__item--logo"><img src="images/logo.svg" alt="Logo"></button>
-            </span>
-            <span class="nav__right">
-                <button class="nav__item nav__item--call"></button>
-                <button class="nav__item nav__item--chat"></button>
-                <button class="nav__item nav__item--profile"></button>
-                
-                <button class="nav__item nav__item--repair"></button>
-                <button class="nav__item nav__item--checkstatus"></button>
-            </span>
-        </nav>
 
-        
-        <div class="h1-md">
-            <h1>Услуги и сервисы</h1>
-            <nav class="nav-header">
-                Оставить заявку <button class="h1-md__item h1-md__item--repair"></button>
-                Статус ремонта <button class="h1-md__item h1-md__item--checkstatus"></button>
-            </nav>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <title>Brands</title>
+</head>
+<body>    
+    <h1>Ремонт техники различных брендов</h1>
+    <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">Slide 1</div>
+            <div class="swiper-slide ">Slide 2</div>
+            <div class="swiper-slide ">Slide 3</div>
+            <div class="swiper-slide ">Slide 3</div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><button class="menu__item" autofocus>Ремонтируемые устройства</button></li>
-                <li><button class="menu__item">Дополнительные услуги</button></li>
-                <li><button class="menu__item">Ремонтируемые бренды</button></li>
-                <li><button class="menu__item">Цены на услуги</button></li>
-                <li><button class="menu__item">Адреса сервисных центров</button></li>
-                <li><button class="menu__item">Специальные цены</button></li>
-                <li><button class="menu__item">Отзывы</button>  </li>
-            </ul>
-           
-        </nav>   
-    </header>
-    <main class="main">
-        <div class="desc">      
-            <input type="button" id="desc__btn" value="Open" hidden>    
-            <p>
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>         
-            <label class="desc__btn--label" for="desc__btn" tabindex="0">Читать далее</label>                
-        </div>   
-        <img class="preview" src="images/preview.jpg" alt="Preview">
-    </main>
+        <div class="swiper-pagination"></div>
+    </div> -->
+
+    <div class="cards cards--hidden"> </div>
+
+    <button class="show-more">Показать всё</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/card-creator.js"></script>
+    <script src="scripts/card-visibility.js"></script>
 </body>
 </html>

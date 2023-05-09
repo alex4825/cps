@@ -1,19 +1,22 @@
-html, body{
+body{
     box-sizing: border-box;
     font-family: "TT Lakes";
-    font-size: 14px;
-    line-height: 143%;
+    font-size: 16px;
+    line-height: 150%;
     font-weight: 400;
+    padding: 16px 0 0 16px;
+    margin: 0;
 }
 *, *::after, *::before{
     box-sizing: inherit;
 }
-ul, ol, li, p, body {
+ul, ol, li, p, h1{
     padding: 0;
     margin: 0;
 }
 button{
     border: none;
+    background-color: white;
 }
 button:hover, label:hover{
     cursor: pointer;
