@@ -14,43 +14,22 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/style-xs.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/style-sm.css">
     <link rel="stylesheet" media="screen and (min-width: 1120px)" href="styles/style-md.css">
-
-    
-    
+   
     <title>Brands</title>
 </head>
 <body>    
     <h1>Ремонт техники различных брендов</h1>
     <div class="swiper-object">
         <div class="swiper">
-            <div class="swiper-wrapper">
-                <a class="swiper-slide ">
-                    <img class="swiper-slide__img" src="images/lenovo.png" alt="lenovo">
-                    <div class="swiper-slide__arrow"></div>
-                </a>
-                <a class="swiper-slide ">
-                    <img class="swiper-slide__img" src="images/samsung.png" alt="samsung">
-                    <div class="swiper-slide__arrow"></div>
-                </a>
-                <a class="swiper-slide ">
-                    <img class="swiper-slide__img" src="images/apple.png" alt="apple">
-                    <div class="swiper-slide__arrow"></div>
-                </a>
-                <a class="swiper-slide ">
-                    <img class="swiper-slide__img" src="images/bosch.png" alt="bosch">
-                    <div class="swiper-slide__arrow"></div>
-                </a>
-            </div>        
+            <div class="swiper-wrapper hidden"></div>        
+            <button class="show-more">Показать всё</button>  
         </div>
-        <div class="swiper-pagination"></div>        
-    </div>
-    <!-- <div class="cards cards--hidden"> </div> -->
-
-    <button class="show-more">Показать всё</button>
+        <div class="swiper-pagination"></div>              
+    </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/swiper.js"></script>
-    <script src="scripts/card-creator.js"></script>
+    <script src="scripts/card-creator.js"></script>    
     <script src="scripts/card-visibility.js"></script>
 </body>
 </html>

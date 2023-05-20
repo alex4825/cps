@@ -4,24 +4,30 @@ body{
 h1{
     margin-bottom: 40px;
 }
-.cards{
-    flex-wrap: wrap;
-}
-.cards::after{
+.swiper-pagination, .swiper-object::after{
     display: none;
 }
-.cards--hidden{
-    max-height: 176px;
+.swiper-wrapper{
+    flex-wrap: wrap;
 }
-
-.card{
-    margin-right: 24px;
+.hidden{
+    max-height: 176px !important;
+    overflow: hidden;
 }
-
+.swiper, .swiper-object{    
+    width: 100%;
+    height: max-content;
+}
+.swiper-slide{
+    width: 240px !important;
+    height: 74px !important;
+    margin-bottom: 16px;
+}
 .show-more{
     display: block;
     font-weight: 500;
     margin-top: 8px;
+    border: none;
 }
 .show-more::before{
     content: "";
@@ -32,12 +38,6 @@ h1{
     margin-right: 16px;
     vertical-align: middle;
 }
-
-.show-more:focus, .show-more:hover, .show-more:active
-{
-    outline-color: aqua;
-}
-
 .show-more--hide::before{
     transform: rotate(180deg);
 }
