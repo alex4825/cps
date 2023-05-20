@@ -6,7 +6,7 @@ h1{
 }
 .swiper-object{
     position: relative;
-    width: 100%;
+    overflow: hidden;
     height: 100px;
 }
 
@@ -38,7 +38,7 @@ h1{
     display: flex;   
     align-items: center;
     justify-content: space-between;
-    
+    margin-right: 16px;
 }
 .swiper-slide__arrow{
     display: inline-block;

@@ -14,7 +14,9 @@ h1{
     max-height: 176px !important;
     overflow: hidden;
 }
-.swiper, .swiper-object{    
+.swiper-object, .swiper{    
+    position: static;
+    display: block;
     width: 100%;
     height: max-content;
 }
