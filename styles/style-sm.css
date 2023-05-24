@@ -30,6 +30,7 @@
     font-weight: 500;
     margin-top: 8px;
     border: none;
+    background: #F2F2F2;
 }
 .show-more::before{
     content: "";
