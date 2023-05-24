@@ -9,13 +9,8 @@ function createCard(imageName){
     item__logo.classList.add("swiper-slide__img");
     item__logo.src = "images/" + imageName + ".png";
     item__logo.alt = imageName;
-
-    var item__arrow = document.createElement("div");
-    item__arrow.classList.add("swiper-slide__arrow");
-
-    item.appendChild(item__logo);
-    item.appendChild(item__arrow);
     
+    item.appendChild(item__logo);
     return item;
 }
 

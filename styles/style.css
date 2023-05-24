@@ -1,52 +1,55 @@
-h1{
+.h2-repair{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;   
-    margin-bottom: 32px; 
+    margin-bottom: 16px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
 }
-.swiper-object{
-    position: relative;
-    overflow: hidden;
-    height: 100px;
+.swiper-wrapper{
+    box-sizing: border-box;
+    position: static;
 }
-
-.swiper-object::after{
+.swiper::after{
     content: "";
     display: inline-block;
     width: 24px;
     height: 81px;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    transform-origin: 50% 0%;
+    transform: rotate(180deg);
     position: absolute;
-    right: 0;
+    right: 0;    
     z-index: 1;
 }
-.swiper {    
+.swiper {       
     width: 240px;
     height: 74px;
-    position: absolute;
-    left: 0;    
     overflow: visible;
+    margin-left: 16px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    position: static;
 }
 .swiper-slide{    
     width: 240px;
     height: 74px;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #b18d8d;
     border-radius: 6px;         
     background-color: white;
     padding-left: 16px;
     padding-right: 16px;
     display: flex;   
     align-items: center;
-    justify-content: space-between;
     margin-right: 16px;
+    background: url(../images/arrow.svg) no-repeat right center content-box,
+                white border-box;    
 }
-.swiper-slide__arrow{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #FF3E79;
-    border-radius: 20px;
-    background: url(../images/arrow.svg) center no-repeat;
+.swiper-slide__logo{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .swiper-pagination{
     position: absolute;
@@ -54,8 +57,9 @@ h1{
     --swiper-pagination-color: #B5B6BC;
     --swiper-pagination-bullet-inactive-color: #ddd;
     --swiper-pagination-bullet-inactive-opacity: 1;
-    --swiper-pagination-bullet-horizontal-gap: 6px;  
-    --swiper-pagination-bottom: -6px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    top: unset !important;
+    bottom: unset !important;
 }
 .show-more{
     display: none;

@@ -1,10 +1,8 @@
-body{
+.h2-repair{
     padding-left: 24px;
+    margin-bottom: 24px;
 }
-h1{
-    margin-bottom: 40px;
-}
-.swiper-pagination, .swiper-object::after{
+.swiper-pagination, .swiper::after{
     display: none;
 }
 .swiper-wrapper{
@@ -14,11 +12,13 @@ h1{
     max-height: 176px !important;
     overflow: hidden;
 }
-.swiper-object, .swiper{    
+.swiper{    
     position: static;
     display: block;
     width: 100%;
-    height: max-content;
+    height: max-content;    
+    margin-left: 24px;
+    margin-right: 24px;
 }
 .swiper-slide{
     width: 240px !important;
@@ -38,6 +38,7 @@ h1{
     width: 1em;
     background: url(../images/icon.svg) center no-repeat;
     margin-right: 16px;
+    margin-left: 16px;
     vertical-align: middle;
 }
 .show-more--hide::before{

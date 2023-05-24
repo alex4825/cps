@@ -4,19 +4,20 @@ body{
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
-    padding: 16px 0 0 16px;
-    margin: 0;
+    background: #F2F2F2;
+}
+html, body {
+    overflow-x: hidden;
 }
 *, *::after, *::before{
     box-sizing: inherit;
 }
-ul, ol, li, p, h1{
+ul, ol, li, p, h1, body{
     padding: 0;
     margin: 0;
 }
 button{
     border: none;
-    background-color: white;
 }
 button:hover, label:hover{
     cursor: pointer;
